@@ -1,0 +1,12 @@
+Under Integration file, kernel.cu is an implementation of Monte Carlo Integration algorithm. It calculates the integration of a given function in the interval [a,b]. 
+The algorithm first generates N uniform random numbers in the interval [a,b]. 
+Then we evaluate the function that we would like to integrate on each of these points. Summing the function values up, multiplying by (b-a), and dividing by N gives us the final result.
+
+
+Under kmeans file, kernel.cu is an implementation of k means algorithm, in which data points are 2Ds, so it has x and y label for each data points. 
+We create 512*512 data points manually and 1024 cores. Then use k-means algorithm to assign these data points to cores.
+The result is printed as 
+Cluster #N has #M members where N is the cluster number and M is how many data points in it.
+The result shows that the implementation is sucessful. 
+
+-Jian Jin

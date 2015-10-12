@@ -1,0 +1,6 @@
+Matrix size is 1024
+Total memory required per matrix is 8.388608 MB
+Total time CPU is 0.003185 sec
+Performance is 5.267267 GB/s
+Total time GPU is 0.000285 sec
+Performance is 58.796455 GB/s
