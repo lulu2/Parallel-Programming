@@ -1,0 +1,20 @@
+1. Run following commands first to set environment:
+setenv CULA_ROOT [PATH OF YOUR CULA LOCATION]
+setenv CULA_INC_PATH $CULA_ROOT/include
+setenv CULA_LIB_PATH_32 $CULA_ROOT/lib
+setenv CULA_LIB_PATH_64 $CULA_ROOT/lib64
+setenv LD_LIBRARY_PATH $CULA_LIB_PATH_32
+
+2. Run 
+make build32
+
+3. Run
+./kernel #threshold #image_set 
+to show the result, for instance for image set of 4096 iamges:
+./kernel 10 batchData_4096_10label.txt 
+
+
+
+read_batch.py: convert data_batch_1 file to a text file for following C/C++ implementation.
+ReadImageData.cpp, ReadImageData.h: Functions that read in image batch data from a text file
+PCA.c, PCA.h: functions that read in image batch data and perform PCA algorithm
